@@ -20,17 +20,18 @@ int main(int argc, char *argv[]) {
 	int result;
 	//Your codes here
 	int i;
-	if ( n % 2 == 1)
+	if (n % 2 ==1 )
 	{
-	 i = 1;
-	}    
+		i=1;
+	}
 	else
 	{
-	 i = 2;
+		i=2;
 	}
-	for(i;i<=n;i+=2)
-	result*=i;
+	for (i;i<=n;i+=2)
+	result *= i;
+	
 
-	printf("%d", result);
+	printf("%d",result);
 	return 0;
 }
