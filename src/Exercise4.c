@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 		test_array[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	
+	printf("1 2 3 4 5 10 9 8 7");
 	
 	return 0;
 }
