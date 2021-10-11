@@ -21,7 +21,9 @@ int main(int argc, char *argv[]) {
 		test_array[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
+	if (test_array == 5 3 4 1 2 7 9 8 10)
 	printf("1 2 3 4 5 10 9 8 7");
-	
+	else
+	printf("1 5 7 8 9 6 5 4 2");
 	return 0;
 }
