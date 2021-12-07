@@ -21,9 +21,28 @@ int main(int argc, char *argv[]) {
 		test_array[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-	if (test_array == 5 3 4 1 2 7 9 8 10)
-	printf("1 2 3 4 5 10 9 8 7");
-	else
-	printf("1 5 7 8 9 6 5 4 2");
-	return 0;
+	for (int o = 0; o < n/2; o++)
+	{
+		for(int j = o + 1; j < n/2; j++){
+			if (test_array[o] > test_array[j])
+			{
+				int temp = test_array[o];
+				test_array[o] = test_array[j];
+				test_array[j] = temp;
+			}
+		}
+		printf("%d ", test_array[o]);
+	}
+	for (int o = 4; o < n; o++)
+	{
+		for(int j = o + 1; j < n; j++)
+			if (test_array[o] < test_array[j])
+			{
+				int temp = test_array[o];
+				test_array[o] = test_array[j];
+				test_array[j] = temp;
+			}
+
+		printf("%d ", test_array[o]);
+	}
 }
