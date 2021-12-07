@@ -4,7 +4,7 @@
 	b. The next 250m will cost 2000 VND
 	c. If the travel distance is larger than 30km then each extra km will cost only 5000VND
 Receive the travel distance in Km and print the amount of money to be paid
-______________________________________
+____________________________________
 | Input: 32.5                        |
 | Output: 251500                     |
 |____________________________________|
@@ -19,7 +19,18 @@ int main(int argc, char *argv[]) {
 	float distance = atof(argv[1]);
 	int result;
 	//Your codes here
-	
+    if(distance <= 2)
+    {   
+        result = 15000 ; 
+    }
+    else if(distance <= 30 && distance > 2)
+    {
+        result = (distance - 2)*8000 + 15000;
+    }
+    else
+    {
+        result = 15000 + 28*8000 + (distance - 30)*5000;
+    }
 	printf("%d", result);
 	return 0;
 }
