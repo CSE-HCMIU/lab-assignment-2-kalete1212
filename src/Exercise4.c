@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 		}
 		printf("%d ", test_array[o]);
 	}
-	for (int o = 4; o < n; o++)
+	for (int o = n/2; o < n; o++)
 	{
 		for(int j = o + 1; j < n; j++)
 			if (test_array[o] < test_array[j])
